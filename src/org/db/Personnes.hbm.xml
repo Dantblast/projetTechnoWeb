@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 1 mai 2016 16:02:09 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.db.Personnes" table="PERSONNES">
+        <id name="id_groupe" type="java.lang.String">
+            <column name="ID_GROUPE" />
+            <generator class="assigned" />
+        </id>
+        <property name="id_personne" type="int">
+            <column name="ID_PERSONNE" />
+        </property>
+        <property name="nom" type="java.lang.String">
+            <column name="NOM" />
+        </property>
+        <property name="prenom" type="java.lang.String">
+            <column name="PRENOM" />
+        </property>
+        <property name="droit" type="int">
+            <column name="DROIT" />
+        </property>
+        <property name="login" type="java.lang.String">
+            <column name="LOGIN" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+    </class>
+</hibernate-mapping>

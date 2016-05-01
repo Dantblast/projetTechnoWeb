@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 1 mai 2016 16:02:09 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.db.Groupes" table="GROUPES">
+        <id name="id_groupe" type="java.lang.String">
+            <column name="ID_GROUPE" />
+            <generator class="assigned" />
+        </id>
+        <property name="id_tuteur" type="int">
+            <column name="ID_TUTEUR" />
+        </property>
+        <property name="num_groupe" type="java.lang.String">
+            <column name="NUM_GROUPE" />
+        </property>
+    </class>
+</hibernate-mapping>

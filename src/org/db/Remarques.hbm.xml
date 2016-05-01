@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 1 mai 2016 16:02:09 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.db.Remarques" table="REMARQUES">
+        <id name="id_to" type="java.lang.String">
+            <column name="ID_TO" />
+            <generator class="assigned" />
+        </id>
+        <property name="id_remarque" type="int">
+            <column name="ID_REMARQUE" />
+        </property>
+        <property name="id_from" type="int">
+            <column name="ID_FROM" />
+        </property>
+        <property name="text_remarque" type="java.lang.String">
+            <column name="TEXT_REMARQUE" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 1 mai 2016 16:02:09 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.db.Deadlines" table="DEADLINES">
+        <id name="id_deadline" type="int">
+            <column name="ID_DEADLINE" />
+            <generator class="assigned" />
+        </id>
+        <property name="nom" type="java.lang.String">
+            <column name="NOM" />
+        </property>
+        <property name="num_groupe" type="java.lang.String">
+            <column name="NUM_GROUPE" />
+        </property>
+        <property name="date_deadline" type="java.util.Date">
+            <column name="DATE_DEADLINE" />
+        </property>
+    </class>
+</hibernate-mapping>

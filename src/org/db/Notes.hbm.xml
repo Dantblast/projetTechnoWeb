@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 1 mai 2016 16:02:09 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.db.Notes" table="NOTES">
+        <id name="id_eleve" type="int">
+            <column name="ID_ELEVE" />
+            <generator class="assigned" />
+        </id>
+        <property name="note" type="int">
+            <column name="NOTE" />
+        </property>
+    </class>
+</hibernate-mapping>
