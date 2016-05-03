@@ -1,5 +1,6 @@
-package dao;
- 
+package com.dev.actions;
+
+
 import java.util.List;
 
 import org.db.Personnes;
@@ -26,4 +27,5 @@ public class PersonnesDao {
         return false;
     }
 }
+
 

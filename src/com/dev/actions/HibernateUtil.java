@@ -1,5 +1,5 @@
-package dao;
- 
+package com.dev.actions;
+
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;

@@ -1,5 +1,6 @@
-package dao;
- 
+package com.dev.actions;
+
+
 import org.db.Personnes;
 
 import com.opensymphony.xwork2.ActionSupport;
