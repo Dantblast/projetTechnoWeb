@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="true" />
+
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="Menu">
+			<result>/menu/Menu.jsp</result>
+		</action>
+	</package>
+	<package name="dao" namespace="/" extends="struts-default">
+	<default-action-ref name="connexion_User"></default-action-ref>
+	<action name="connexion_User"><result>/connexion/connexion.jsp</result></action>
+        <action name="login" class="dao.LoginAction" method="execute">
+            <result name="SUCCESS">/accueil/AccueilEleve.jsp</result>
+            <result name="INPUT">/connexion/connexion.jsp</result>
+        </action>
+    </package>
+	<include file="com/objis/demostruts2/example.xml" />
+
+</struts>
